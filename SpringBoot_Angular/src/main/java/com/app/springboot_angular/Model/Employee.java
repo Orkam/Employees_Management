@@ -13,8 +13,8 @@ public class Employee {
 
     @Column(name = "name", length = 60, nullable = false)
     private String name;
-    @Column(name = "Last_name", length = 60, nullable = false)
-    private String Last_Name;
+    @Column(name = "last_name", length = 60, nullable = false)
+    private String last_Name;
     @Column(name = "email", length = 60, nullable = false, unique = true)
     private String email;
 
@@ -37,14 +37,7 @@ public class Employee {
         this.name = name;
     }
 
-    public String getLast_Name() {
-        return Last_Name;
-    }
-
-    public void setLast_Name(String last_Name) {
-        Last_Name = last_Name;
-    }
-
+   
     public String getEmail() {
         return email;
     }
@@ -52,4 +45,13 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
+
+	public String getLast_Name() {
+		return last_Name;
+	}
+
+	public void setLast_Name(String last_Name) {
+		this.last_Name = last_Name;
+	}
+    
 }
